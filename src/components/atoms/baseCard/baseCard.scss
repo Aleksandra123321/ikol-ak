@@ -1,0 +1,18 @@
+.base-card {
+  padding: 16px;
+
+  border: 1px solid $border;
+  border-radius: 3px;
+  box-shadow: 0px 0 5px 0 $primary;
+
+  &__title {
+    font-size: 18px;
+    font-weight: $fontWeightMedium;
+
+    margin-bottom: 18px;
+  }
+
+  &--error {
+    box-shadow: 0px 0 5px 0 $error;
+  }
+}

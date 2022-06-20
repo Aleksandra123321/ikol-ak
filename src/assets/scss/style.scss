@@ -1,0 +1,42 @@
+@import "@/assets/scss/config/variables.scss";
+@import "@/assets/scss/config/fonts.scss";
+@import "@/assets/scss/config/animations.scss";
+
+
+@import '@/components/atoms/baseButton/baseButton.scss';
+@import '@/components/atoms/baseInput/baseInput.scss';
+@import '@/components/atoms/baseCard/baseCard.scss';
+@import '@/components/atoms/loadingButton/loadingButton.scss';
+
+@import '@/components/molecules/formCard/formCard.scss';
+@import '@/components/molecules/resultCard/resultCard.scss';
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $background;
+}
+
+html {
+  font-size: $fontSize;
+}
+
+body {
+  font-family: $fontPrimary;
+  font-weight: $fontWeightNormal;
+  color: $fontPrimaryColor;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 30px auto;
+  width: 90%;
+  
+  @media (min-width: 992px) {
+    margin: 100px auto;
+    width: 900px;
+  }
+}

@@ -1,0 +1,50 @@
+.base-button {
+  position: relative;
+
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  border-radius: 3px;
+  padding: 0 20px;
+  margin: 20px 0;
+
+  border: 1px solid $border;
+  background-color: $background;
+
+  color: $fontPrimaryColor;
+  font-family: $fontPrimary;
+
+  font-size: 16px;
+  height: 34px;
+  line-height: 34px;
+
+  will-change: border color box-shadow background-color;
+  transition: all 0.15s ease-out;
+
+  &:disabled {
+    color: $inputPlaceholderColor;
+    pointer-events: none;
+  }
+
+  &:hover {
+    color: $primary;
+    border: 1px solid $primary;
+  }
+
+  &--outlined {
+    color: $primary;
+    border: 1px solid $primary;
+
+    &:disabled {
+      color: $inputPlaceholderColor;
+      border: 1px solid $inputPlaceholderColor;
+    }
+
+    &:hover {
+      box-shadow: 0 0 1px 1px $primary;
+    }
+  }
+}

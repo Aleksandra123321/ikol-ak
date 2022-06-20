@@ -1,0 +1,31 @@
+.formCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 10px;
+
+    @media (min-width: 992px) {
+      flex-direction: row;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    padding: 15px 20px;
+  }
+
+  &__button {
+    margin: 20px auto;
+    padding: 5px 30px;
+
+    @media (min-width: 992px) {
+      width: 350px;
+    }
+  }
+}
